@@ -37,10 +37,6 @@ header{
     font-size: 0.875em;
     justify-content: space-around;
 }
-
-.nav__logo{
-    width: 200px;
-}
 .nav__items{
     text-decoration: none;
     font-weight: 900;
@@ -139,11 +135,15 @@ background: $primary-color;
 list-style: none;
 }
 
+.social__element:hover{
+    background:#4cf8ca;
+}
+
 //content
 
 .container{
     position: absolute;
-    width: 100vw;
+    width: 100%;
     margin-top: 16vh;
     background: $secundary-color;
     z-index: 10;
@@ -195,6 +195,7 @@ margin-bottom: 5vh;
 display: grid;
 grid-gap: 20px;
 grid-template-columns: repeat( 4,1fr );
+
 }
 .skills__icons{
     display: flex;
@@ -203,10 +204,12 @@ grid-template-columns: repeat( 4,1fr );
     width:100%;
     list-style: none;
     
+    
 }
 
 .skills__icons img{
     width: 200px;
+    filter: drop-shadow(-5px 3px 8px #474747);
 }
 
 //proyets
@@ -236,7 +239,7 @@ grid-template-columns: repeat( 4,1fr );
 }
 
 .drupal__text{
-    margin: 3vh 0;
+    margin: 5vh 0;
 }
 
 .drupal__image{
@@ -264,7 +267,7 @@ grid-template-columns: repeat( 4,1fr );
 }
 
 .mugs__text{
-    margin: 3vh 0;
+    margin: 5vh 0;
 }
 
 .btns-container{
@@ -273,9 +276,8 @@ grid-template-columns: repeat( 4,1fr );
 }
 .btn-proyect{
     background: $primary-color;
-    border: 2px solid #000;
     border-radius: 50px;
-    box-shadow: -3px 3px 8px;
+    box-shadow: -1px 1px 4px;
     padding: 0.4vw 1vw;
     margin-right: 1vw;
 
@@ -286,25 +288,29 @@ grid-template-columns: repeat( 4,1fr );
     
 }
 .btn-proyect:hover{
-    border: 2px solid #fff;
-
-    a:hover{
-        color:#fff;
+    a{
+        color: #fff;
     }
 }
 
 .btn-codig{
-    border: 2px solid #000;
+    border: 1px solid #000;
     border-radius: 50px;
     padding: 0.4vw 1vw;
-    box-shadow: -3px 3px 8px;
+    box-shadow: -1px 1px 4px #000;
 
     a{
         text-decoration: none;
         color: #000;
     }
 }
-
+.btn-codig:hover{
+    background: $primary-color;
+    
+    a{
+        color:#fff;
+    }
+}
 
 //recommendation
 
@@ -348,7 +354,7 @@ color: #383535;
     align-items: center;
     flex-direction: column;
 width: 39vw;
-margin: 0 auto;
+margin: 0 auto 12vh auto;
 }
 
 .talk__title{
@@ -405,14 +411,14 @@ font-weight: 400;
 
 //footer
 .footer{
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 10vh;
-    background: #fff;
+    justify-content: space-between;
+    max-width: 1366px;
+    position: absolute;
+    width: 84vw;
+    padding: 18vh 0 3vh 0;
 }
-
 .footer__copyright{
     font-size:1em;
 }
