@@ -24,7 +24,8 @@
                     <li><a href="#talk" class="nav__items">HABLEMOS</a></li>
                 </ul>
                 <div class="nav__btn">
-                    <a href="images/" download="curriculum" title="descargar" class="downloan-cv">DESCARGAR
+                    <a href="images/curriculum.pdf" download="curriculum" title="descargar"
+                        class="downloan-cv">DESCARGAR
                         CURRÍCULUM</a>
                 </div>
             </div>
@@ -65,14 +66,46 @@
                 <article class="skills">
                     <h3 class="skills__title">MIS HABILIDADES</h3>
                     <ul class="skills__list">
-                        <li class="skills__icons"><img src="images/html.png" alt="html"></li>
-                        <li class="skills__icons"><img src="images/css.png" alt="css"></li>
-                        <li class="skills__icons"><img src="images/js.png" alt="js"></li>
-                        <li class="skills__icons"><img src="images/logo-git-icon.png" alt="git"></li>
-                        <li class="skills__icons"><img src="images/figma2.png" alt="figma2"></li>
-                        <li class="skills__icons"><img src="images/Wordpress_logo.png" alt="wordpress"></li>
-                        <li class="skills__icons"><img src="images/sass_logo.png" alt="sass"></li>
-                        <li class="skills__icons"><img src="images/ps_logo.png" alt="ps"></li>
+                        <li class="skills__icons"><img src="images/html.png" alt="html">
+                            <div class="skills__text">
+                                <h4>HTML</h4>
+                            </div>
+                        </li>
+                        <li class="skills__icons"><img src="images/css.png" alt="css">
+                            <div class="skills__text">
+                                <h4>css</h4>
+                            </div>
+                        </li>
+                        <li class="skills__icons"><img src="images/js.png" alt="js">
+                            <div class="skills__text">
+                                <h4>JavaScript</h4>
+                            </div>
+                        </li>
+                        <li class="skills__icons"><img src="images/logo-git-icon.png" alt="git">
+                            <div class="skills__text">
+                                <h4>Git</h4>
+                            </div>
+                        </li>
+                        <li class="skills__icons"><img src="images/figma2.png" alt="figma2">
+                            <div class="skills__text">
+                                <h4>Figma</h4>
+                            </div>
+                        </li>
+                        <li class="skills__icons"><img src="images/Wordpress_logo.png" alt="wordpress">
+                            <div class="skills__text">
+                                <h4>Wordpress</h4>
+                            </div>
+                        </li>
+                        <li class="skills__icons"><img src="images/sass-logo.png" alt="sass">
+                            <div class="skills__text">
+                                <h4>Sass</h4>
+                            </div>
+                        </li>
+                        <li class="skills__icons"><img src="images/ps-logo.png" alt="ps">
+                            <div class="skills__text">
+                                <h4>Photoshop</h4>
+                            </div>
+                        </li>
                     </ul>
                 </article>
             </section>
@@ -84,8 +117,10 @@
                             Drupal para Colombia.
                         </p>
                         <div class="btns-container">
-                            <div class="btn-proyect"><a href="#">VER PROYECTO</a></div>
-                            <div class="btn-codig"><a href="#">VER CÓDIGO</a></div>
+                            <div class="btn-proyect"><a href="https://alexander527.github.io/drupalColombia/" target="blank">VER PROYECTO</a></div>
+                            <div class="btn-codig"><a href="https://github.com/Alexander527/drupalColombia.git"
+                                    target="blank">VER
+                                    CÓDIGO</a></div>
                         </div>
 
                     </div>
@@ -100,8 +135,10 @@
                             personalizados.
                         </p>
                         <div class="btns-container">
-                            <div class="btn-proyect"><a href="#">VER PROYECTO</a></div>
-                            <div class="btn-codig"><a href="#">VER CÓDIGO</a></div>
+                            <div class="btn-proyect"><a href="https://alexander527.github.io/Mugs_personalizados/" target="blank">VER PROYECTO</a></div>
+                            <div class="btn-codig"><a href="https://github.com/Alexander527/Mugs_personalizados.git"
+                                    target="blank">VER
+                                    CÓDIGO</a></div>
                         </div>
 
                     </div>
@@ -120,17 +157,20 @@
                     en contacto.</p>
                 <form action="" class="form">
                     <label for="" class="form__text">Nombre Completo</label>
-                    <input type="text" placeholder="Juan" class="form__label">
+                    <input name="name" type="text" placeholder="Juan" class="form__label">
                     <label for="" class="form__text">Correo Electrónico</label>
-                    <input type="text" placeholder="juan@gmail.com" class="form__label">
+                    <input name="mail" type="text" placeholder="juan@gmail.com" class="form__label">
                     <label for="" class=" form__text">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form__textarea"></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" class="form__textarea"></textarea>
                     <button class="form__btn">Enviar Mensaje</button>
                 </form>
             </div>
             <footer class="footer">
                 <img src="images/Logo-3.png" alt="logo" class="footer__image">
-                <p class="footer__copyright">Hecho con por Alexander. Copyright 2021 - Todos los derechos reservados.
+                <p class="footer__copyright">Hecho con <img src="images/heart.png" class="footer__heart"> por Alexander.
+                    Copyright
+                    2021 - Todos
+                    los derechos reservados.
                 </p>
                 <ul class="social">
                     <li class="social__element"><a href=""><img src="images/phone.png"></a></li>
@@ -147,6 +187,8 @@
 
 
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,8 @@ $secundary-color:#8884FF;
     box-sizing: border-box;
 }
 
+
+
 body{
     max-width: 1366px;
     font-family: 'Oxygen', sans-serif;
@@ -60,7 +62,7 @@ header{
     font-size: 0.875em;
     letter-spacing: 1.25px;
     transition: all 400ms ease-out;
-    
+    cursor: pointer;
 }
 
 .nav__btn:hover{
@@ -175,7 +177,7 @@ color: #fff;
 
 //skills
 .skills{
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding-top: 16vh;
     
@@ -187,13 +189,13 @@ font-weight: 700;
 line-height: 55px;
 text-align: center;
 color: $primary-color;
-margin-bottom: 5vh;
+margin-bottom: 7vh;
 
 }
 
 .skills__list{
 display: grid;
-grid-gap: 20px;
+grid-gap: 30px;
 grid-template-columns: repeat( 4,1fr );
 
 }
@@ -203,13 +205,42 @@ grid-template-columns: repeat( 4,1fr );
     align-items: center;
     width:100%;
     list-style: none;
-    
-    
+    position:relative;
+    cursor: pointer;
+}
+ 
+.skills__icons img{
+    width: 170px;
+    transition: all 500ms ease-out;
+    filter: drop-shadow(-5px 3px 8px #474747);
 }
 
-.skills__icons img{
-    width: 200px;
-    filter: drop-shadow(-5px 3px 8px #474747);
+.skills__text{
+    position: absolute;
+    top: 9px;
+    width: 76%;
+    height: 90%;
+    text-align: center;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    z-index: 100;
+}
+
+.skills__text h4{
+    transition: all 500ms ease-out;
+    color: #fff;
+}
+
+.skills__icons:hover > .skills__text{
+    opacity: 1;
+}
+
+.skills__icons:hover > .skills__text h4{
+    transition: all 500ms ease-out;
+    margin-top: -50px;
+    font-size: 2em;
+    font-weight: 900;
+    
 }
 
 //proyets
@@ -421,4 +452,9 @@ font-weight: 400;
 }
 .footer__copyright{
     font-size:1em;
+}
+
+.footer__heart{
+    width: 14px;
+    margin: 0px 4px;
 }
