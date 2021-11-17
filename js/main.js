@@ -23,3 +23,20 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+// modal
+function modal_change(){
+  document.getElementById("modal").classList.toggle("modal--active")
+}
+const social__modal = document.querySelectorAll(".social__modal");
+
+for(let i = 0; i < social__modal.length; i++){
+  social__modal[i].onclick = function(){
+    modal_change();
+  }
+}
+
+
+document.getElementById("modal__btn").onclick = function(){
+  modal_change();
+}

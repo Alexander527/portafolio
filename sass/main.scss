@@ -34,6 +34,7 @@ header{
 @media  screen and (max-width: 767px){
     .nav{
         justify-content: space-between;
+        margin-bottom: 12vh;
     }
 }
 
@@ -188,6 +189,62 @@ list-style: none;
 
 .social__element:hover{
     background:#4cf8ca;
+}
+// pop up
+.modal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background:rgba(0, 0, 0, 0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal--active{
+    opacity:1;
+    visibility: visible;
+}
+
+.modal__container{
+    width: 30vw;
+    height: auto;
+    margin: auto;
+    background: #fff;
+    box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+    transition: all 500ms ease;
+    position: relative;
+}
+
+.modal__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 2vw;
+    background: #db8046;
+    color: #fff;
+}
+
+
+.modal__btn{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal__btn:hover{
+    transform: scale(1.1);
+}
+
+.modal__contact{
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    line-height:30px;
 }
 
 //content
@@ -506,7 +563,7 @@ border-radius: 24px;
 @media screen and (max-width: 767px){
     .recommendation{
         background: $secundary-color;
-        margin: 44vh auto;
+        margin: 34vh auto;
     }
 }
 
