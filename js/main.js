@@ -24,6 +24,8 @@ $(document).ready(function(){
   });
 });
 
+
+
 // modal
 function modal_change(){
   document.getElementById("modal").classList.toggle("modal--active")
@@ -40,3 +42,24 @@ for(let i = 0; i < social__modal.length; i++){
 document.getElementById("modal__btn").onclick = function(){
   modal_change();
 }
+
+
+//formulario 
+ const $form = document.querySelector('#form');
+ $form.addEventListener('submit',hadleSubmit);
+ 
+ async function hadleSubmit(event){
+  event.preventDefault();
+  const form = new FormData(this);
+  const response = await fetch(this.action, {
+    method: this.method, 
+    body: form,
+    header: {
+      'Accept': 'application/json'
+    }
+  })
+  if(response.ok){
+    this.reset()
+    alert('gracias');
+  }
+ }
