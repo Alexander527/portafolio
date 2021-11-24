@@ -45,21 +45,21 @@ document.getElementById("modal__btn").onclick = function(){
 
 
 //formulario 
- const $form = document.querySelector('#form');
- $form.addEventListener('submit',hadleSubmit);
+ const $form = document.querySelector('#form')
+ $form.addEventListener('submit', hadleSubmit())
  
  async function hadleSubmit(event){
-  event.preventDefault();
-  const form = new FormData(this);
+  event.preventDefault()
+  const form = new FormData(this)
   const response = await fetch(this.action, {
     method: this.method, 
     body: form,
-    header: {
+    headers: {
       'Accept': 'application/json'
     }
   })
   if(response.ok){
     this.reset()
-    alert('gracias');
+    alert('gracias')
   }
  }
